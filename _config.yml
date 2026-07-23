@@ -1,0 +1,68 @@
+# ==================================================
+# 网站基本配置
+# ==================================================
+
+# 网站标题（显示在浏览器标签和导航栏）
+title: "Luo Wenbo"
+
+# 网站副标题
+subtitle: "Finance | Capital Markets | Health Insurance"
+
+# 网站描述（用于搜索引擎）
+description: "Academic personal website of Luo Wenbo, focusing on Finance, Capital Markets, and Health Insurance research."
+
+# 你的 GitHub Pages 地址（创建仓库后修改）
+url: "https://luomrme-cpu.github.io"
+baseurl: ""
+
+# ==================================================
+# 作者信息
+# ==================================================
+author:
+  name: "Luo Wenbo"
+  title: "Researcher"
+  email: "your.email@example.com"          # 替换为你的邮箱
+  affiliation: "Your University / Institution"  # 替换为你的单位
+
+  # 社交链接（不需要的可以删除）
+  github: "luomrme-cpu"                    # 替换为你的 GitHub 用户名
+  google_scholar: "citations?user=XXXXXX"  # 替换为你的 Google Scholar ID
+  # linkedin: "luowenbo"                   # 如果你有 LinkedIn
+  # twitter: "luowenbo"                    # 如果你有 Twitter
+  # orcid: "0000-0000-0000-0000"           # 如果你有 ORCID
+
+# ==================================================
+# 导航栏设置
+# ==================================================
+header_pages:
+  - index.md        # 首页
+  - cv.md           # 简历
+  - research.md     # 研究方向
+  - publications.md # 发表论文
+  - teaching.md     # 教学（如果需要）
+  - contact.md      # 联系方式
+
+# ==================================================
+# Jekyll 基础配置
+# ==================================================
+theme: minima
+markdown: kramdown
+highlighter: rouge
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# ==================================================
+# 网站设置
+# ==================================================
+
+# 显示最近更新时间
+show_excerpts: true
+
+# 时区
+timezone: "Asia/Shanghai"
+
+# 语言
+lang: "zh-CN"
