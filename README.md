@@ -1,90 +1,44 @@
-# Luo Wenbo - Academic Personal Website
+# Luo Wenbo - Academic Website
 
-This is the source code for my academic personal website, hosted on GitHub Pages.
+极简学术个人网站，PanleBarwick 风格。
 
-## 🌐 Website
-
-[https://luomrme-cpu.github.io](https://luomrme-cpu.github.io)
-
-## 📋 Features
-
-- Home page with personal introduction
-- CV / Resume page (with PDF download)
-- Research interests page
-- Publications page (with PDF links for papers)
-- Teaching experience page
-- Contact information
-
-## 🛠️ Technology Stack
-
-- **GitHub Pages** - Free hosting
-- **Jekyll** - Static site generator
-- **Markdown** - Content writing
-- **Minima** - Jekyll theme
-
-## 📁 Folder Structure
+## 文件结构
 
 ```
 .
-├── _config.yml              # Website configuration
-├── index.md                 # Home page
-├── cv.md                    # CV page
-├── research.md              # Research page
-├── publications.md          # Publications page
-├── teaching.md              # Teaching page
-├── contact.md               # Contact page
-├── assets/
-│   ├── pdfs/                # Store PDF files (CV, papers, etc.)
-│   ├── images/              # Store images (profile photo, etc.)
-│   └── css/                 # Custom styles
-├── _layouts/                # Page layouts
-├── _includes/               # Reusable components
-└── Gemfile                  # Ruby dependencies
+├── index.html           # 首页
+├── publications.html    # 发表论文
+├── research.html        # 研究方向
+├── style.css            # 样式文件
+├── papers/              # 论文 PDF 文件夹
+├── files/               # CV 等文件
+└── images/              # 图片文件夹
 ```
 
-## 🚀 How to Update
+## 如何使用
 
-### Adding a PDF File
+### 1. 添加个人照片
 
-1. Place your PDF file in `assets/pdfs/`
-2. Link to it in Markdown: `[PDF](assets/pdfs/your-file.pdf)`
+把你的照片放到 `images/` 文件夹，命名为 `profile.jpg`，然后修改 `index.html` 中的引用。
 
-### Updating Content
+### 2. 添加 CV
 
-1. Edit the corresponding `.md` file
-2. Commit and push to GitHub
-3. GitHub Pages will automatically rebuild the website
+把你的 CV.pdf 放到 `files/` 文件夹。
 
-## 📤 Deploy to GitHub
+### 3. 添加论文
 
-### First Time Setup
+把论文 PDF 放到 `papers/` 文件夹，然后在 `publications.html` 中添加链接。
 
-1. Create a repository on GitHub named `YOUR-USERNAME.github.io`
-2. Run these commands:
+### 4. 修改个人信息
 
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-USERNAME.github.io.git
-git push -u origin main
-```
+直接编辑各个 `.html` 文件中的内容。
 
-### Subsequent Updates
+## 推送到 GitHub
 
 ```bash
 git add .
-git commit -m "Update: description of changes"
+git commit -m "Update website"
 git push
 ```
 
-## 📝 Customization
-
-- Edit `_config.yml` to change website title, author info, and navigation
-- Edit Markdown files (`.md`) to update page content
-- Add your photo to `assets/images/profile.jpg`
-- Add your CV PDF to `assets/pdfs/cv.pdf`
-
-## 📄 License
-
-This is my personal website. Feel free to use the structure as a template for your own academic website.
+访问：https://luomrme-cpu.github.io
